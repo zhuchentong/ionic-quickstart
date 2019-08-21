@@ -1,0 +1,51 @@
+.amap-logo,
+.amap-copyright {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dot-badge,
+.am-badge-dot,
+.am-badge-text {
+  right: -13px;
+}
+
+ion-card-title {
+  font-size: 14px;
+}
+
+ion-icon {
+  .big {
+    width: 100px;
+    height: 100px;
+  }
+  .bigger {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.item.sc-ion-label-md-h,
+.item .sc-ion-label-md-h {
+  font-size: 12px;
+}
+
+.am-tabs-default-bar-left .am-tabs-default-bar-content,
+.am-tabs-default-bar-right .am-tabs-default-bar-content {
+  height: 140px !important;
+}
+
+ion-searchbar.no-right-radius {
+  .searchbar-input {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+ion-loading.under-alert {
+  z-index: 10000 !important;
+}

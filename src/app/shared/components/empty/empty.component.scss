@@ -1,0 +1,12 @@
+:host {
+  .empty-box {
+    height: 200px;
+    & > * {
+      padding: 10px;
+    }
+    ion-icon {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
