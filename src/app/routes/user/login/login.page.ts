@@ -61,5 +61,6 @@ export class LoginPage implements OnInit {
     user.username = 'user1'
 
     this.store.dispatch(new LoginAction(user))
+    this.loginSuccess()
   }
 }
