@@ -1,0 +1,21 @@
+<ion-content padding>
+  <ion-grid>
+    <ion-row justify-content-center align-items-center>
+      <ion-col>
+        <form [formGroup]="loginForm" (submit)="onLogin()">
+          <ion-item>
+            <ion-label color="primary" position="floating">用户名</ion-label>
+            <ion-input type="text" formControlName="username" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label icon="password" color="primary" position="floating">密码</ion-label>
+            <ion-input type="password" formControlName="password" required></ion-input>
+          </ion-item>
+          <ion-button class="ion-margin-vertical" type="submit" expand="block" [disabled]="!loginForm.valid"
+            >登录</ion-button
+          >
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

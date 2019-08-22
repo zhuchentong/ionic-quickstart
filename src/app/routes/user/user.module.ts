@@ -1,26 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { SharedModule } from '@app/shared/shared.module'
 
-import { IonicModule } from '@ionic/angular';
+import { UserRoutingModule } from './user-routing.module'
 
-import { UserPage } from './user.page';
+import { UserPage } from './user.page'
+import { LoginPage } from './login/login.page'
 
-const routes: Routes = [
-  {
-    path: '',
-    component: UserPage
-  }
-];
-
+const PAGES = [UserPage, LoginPage]
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [UserPage]
+  imports: [SharedModule, UserRoutingModule],
+  declarations: [...PAGES]
 })
 export class UserPageModule {}

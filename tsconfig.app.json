@@ -7,12 +7,12 @@
   "include": ["src/**/*.ts"],
   "exclude": ["src/test.ts", "src/**/*.spec.ts"],
   "paths": {
-    "@app/*": ["app/*"],
-    "@assets/*": ["assets/*"],
-    "@env/*": ["environments/*"],
     "@shared/*": ["app/shared/*"],
     "@core/*": ["app/core/*"],
     "@store/*": ["app/store/*"],
-    "@model/*": ["app/model/*"]
+    "@model/*": ["app/model/*"],
+    "@app/*": ["app/*"],
+    "@assets/*": ["assets/*"],
+    "@env/*": ["environments/*"]
   }
 }
