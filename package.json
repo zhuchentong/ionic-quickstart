@@ -43,7 +43,7 @@
     "@ngx-toolkit/logger": "^8.0.0",
     "@ngxs/storage-plugin": "^3.5.0",
     "@ngxs/store": "^3.5.0",
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "core-js": "^2.5.4",
     "qs": "^6.8.0",
     "rxjs": "~6.5.1",
